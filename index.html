@@ -57,10 +57,10 @@ const folderInput = document.getElementById("folderInput");
 
 function loadFolder(folder) {
   imageContainer.innerHTML = ""; // clear previous images
-  folderTitle.textContent = "Chapter: " + folder;
+  folderTitle.textContent = "Folder: " + folder;
   folderInput.value = folder; // update input
 
-  let i = 0;
+  let i = 1;
 
   function loadNextImage() {
     if (i >= maxImages) return; // stop at maxImages
